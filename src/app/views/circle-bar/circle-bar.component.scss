@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.disabled {
+  display: none !important;
+}
+
+.circle {
+  position: fixed;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1E27;
+
+  .percent {
+    position: relative;
+    border: 3px solid rgba(39, 42, 56, 0.5);
+    width: 335px;
+    height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    background-color: #12151E;
+
+    &__border {
+      position: absolute;
+      bottom: 0;
+    }
+
+    svg {
+      position: relative;
+      width: 270px;
+      height: 270px;
+      border-radius: 150px;
+      border: 1px solid rgba(39, 42, 56, 0.5);
+
+      circle {
+        width: 270px;
+        height: 270px;
+        fill: none;
+        stroke-width: 6;
+        stroke: #000;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 820;
+        stroke-dashoffset: 820;
+        stroke-linecap: round;
+      }
+
+      circle:nth-child(1) {
+        stroke-dashoffset: 0;
+        stroke: rgba(39, 42, 56, 0.5);
+        stroke-width: 12;
+      }
+
+      circle:nth-child(2) {
+        stroke-dashoffset: 0;
+        stroke: rgba(247, 147, 30, 0.2)
+      }
+
+      circle:nth-child(3) {
+        stroke-dashoffset: calc(820 - (820 * 90) / 100);
+        stroke: #fff;
+        transform-origin: center;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+.percent__stats {
+  position: absolute;
+  top: 55px;
+  left: 105px;
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stat {
+  font-family: Tahoma;
+  font-style: normal;
+  font-weight: normal;
+  color: #D7E2F2;
+
+  &-text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 15px;
+  }
+
+  &-number {
+    font-size: 29px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+
+  &-blue {
+    color: #0089FF;
+  }
+
+  &-yellow {
+    color: #F7931E;
+  }
+
+  &-grey {
+    color: #606580;
+    font-size: 18px;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+  top: 0;
+}

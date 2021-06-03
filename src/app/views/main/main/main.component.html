@@ -1,0 +1,22 @@
+<section class="main">
+  <section class="task">
+    <div class="header">
+      <div class="header__tasks">
+        <button class="header__button"
+                routerLinkActive="active"
+                routerLink="first-task"
+        >Задание 1
+        </button>
+        <button class="header__button"
+                routerLinkActive="active"
+                routerLink="second-task"
+        >Задание 2
+        </button>
+      </div>
+      <button class="header__button header__logout" routerLink="login"
+              (click)="logout()">
+        <img src="../../../assets/Login.svg" alt="Выйти">
+      </button>
+    </div>
+  </section>
+</section>
