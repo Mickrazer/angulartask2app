@@ -1,11 +1,11 @@
 <div class="popup">
-  <img class="popup__image" src="../../../assets/backImage.svg" alt="backgroundImage">
+  <img class="popup__image" src="./assets/backImage.svg" alt="backgroundImage">
   <div class="popup__content">
-    <img src="../../assets/loginLogo.svg" alt="Logo">
+    <img src="./assets/loginLogo.svg" alt="Logo">
     <form class="popup__form" name="signin" [formGroup]="form" (ngSubmit)="submitForm()">
-      <img class="popup__form_image-login" src="../../assets/user.svg" alt="userLogo">
+      <img class="popup__form_image-login" src="./assets/user.svg" alt="userLogo">
       <input type="email" required class="popup__input" placeholder="Логин" formControlName="login">
-      <img class="popup__form_image-pass" src="../../assets/passLock.svg" alt="userLogo">
+      <img class="popup__form_image-pass" src="./assets/passLock.svg" alt="userLogo">
       <div class="popup__form_image-pass eye"
               (click)="toggleFieldTextType()"
               [class.eye__image]="fieldTextType">

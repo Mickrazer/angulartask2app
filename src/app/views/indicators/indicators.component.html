@@ -1,9 +1,9 @@
 <section class="indicators">
   <div class="indicators__content">
     <div class="indicators__header">
-      <img class="indicators__header_image" src="../../../assets/Parameters.svg" alt="Parameters">
+      <img class="indicators__header_image" src="./assets/Parameters.svg" alt="Parameters">
       <h2 class="indicators__header_title">Показатели</h2>
-      <img src="../../../assets/More.svg" alt="More">
+      <img src="./assets/More.svg" alt="More">
     </div>
     <div class="indicators__parametrs">
       <h2 class="indicators__header_title parameters">Параметры</h2>
@@ -13,7 +13,7 @@
     <div class="indicators__block">
       <div *ngFor="let indicator of indicatorsData; let i = index">
         <div class="indicators__data">
-          <img class="indicators__header_image" src="../../../assets/open.svg" alt="close"
+          <img class="indicators__header_image" src="./assets/open.svg" alt="close"
                [class.indicators__image]="indicator.isOpen" (click)="toogleOpenStatus(indicator)">
           <h2 class="indicators__header_title indicators__block_text parameters" [class.open]="indicator.isOpen">{{indicator.name}}</h2>
           <h2 class="indicators__header_title indicators__block_text model">Отклонений:<span
