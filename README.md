@@ -1,5 +1,5 @@
 # Проект на Angular
- Ссылка на проект: https://mickrazer.github.io/angulartask2app/angulartask2app/
+ Ссылка на проект: https://mickrazer.github.io/angulartask2app/angulartask2app
  
  Тестовый логин: Test
  
