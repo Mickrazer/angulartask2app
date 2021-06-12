@@ -1,3 +1,18 @@
+# Проект на Angular
+ Ссылка на проект: https://mickrazer.github.io/angulartask2app/angulartask2app/
+ 
+ Тестовый логин: Test
+ 
+ Тестовый пароль: qwerty1234
+
+## Проект имеет 3 страницы:
+
+ 1. Страница логина:
+
+ 2. Страница первого задания:
+
+ 3. Страница второго задания:
+
 # LastTask
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
